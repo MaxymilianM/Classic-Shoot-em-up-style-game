@@ -351,6 +351,9 @@ void	Game::render()
 	wattron(_win, COLOR_PAIR(2));
 	for (int i = 0; i < _pilot.getHP(); i++)
 		mvwprintw(this->_win, 0, this->_width - 4 - this->_pilot.getHP() + i, "|");
+	if (!(_boss[0].getVis()))
+	for (int i = 0; i < _boss[0].getHP(); i++)
+		mvwprintw(this->_win, _height - 1, (_width - _boss[0].getHP()) / 2 + i, "|");
 	wattroff(_win, COLOR_PAIR(2));
 	mvwprintw(this->_win, 0, this->_width - 4, " ]");
 	wrefresh(this->_win);

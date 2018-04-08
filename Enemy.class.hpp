@@ -34,6 +34,7 @@ public:
 	bool getVis(void) const;
 	char getSym(void) const;
 	char getColor(void) const;
+	int getHP(void) const;
 	void deleteEnemy();
 	void move();
 	void setXY(int const x, int const y);

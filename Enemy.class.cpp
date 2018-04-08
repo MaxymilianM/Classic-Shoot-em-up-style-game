@@ -61,6 +61,7 @@ bool Enemy::getVis(void) const { return _isVis; }
 void Enemy::setVis(bool vis) { _isVis = vis; }
 char Enemy::getSym(void) const { return _sym; }
 char Enemy::getColor(void) const { return _color; }
+int Enemy::getHP(void) const { return _hp; }
 void Enemy::setHP(int hp) { _hp = hp; }
 
 void Enemy::setXY(int const x, int const y)
